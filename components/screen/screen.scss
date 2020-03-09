@@ -1,0 +1,23 @@
+@import '../../src/variables';
+
+.screen{
+    position: relative;
+    @include flexCenter( column );
+    height: auto;
+    width: 100%;
+    background: transparent;
+    .screen_title{
+        @include flexCenter( column );
+        padding-top: 2em;
+        padding-bottom: 2em;
+        height: 40%;
+        width: 100%;
+        color: $lightGreen;
+        text-align: center;
+        font-weight:  lighter !important;
+        font-size: 30px;
+        // padding-left: 5em;
+        // padding-right: 5em;
+    }
+
+}

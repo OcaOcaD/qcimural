@@ -1,0 +1,27 @@
+@import '../../src/variables';
+$frameHeight: 100vw;
+$frameWidth: 80%;
+.board{
+    position: relative;
+    @include flexCenter( row );
+    justify-content: space-evenly;
+    height: 500px;
+    width: $frameWidth;
+    background-image: url( '../../src/corcho.jpg' );
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    .frame{
+        position: absolute;
+        height: calc(100% + 16px);
+        width: calc(100% + 16px);
+        background-color: brown;
+        opacity: 0.5;
+    }
+    .post{
+        @include flexCenter( column );
+        width: 380px;
+        height: 680px;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}

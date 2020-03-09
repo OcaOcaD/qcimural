@@ -1,0 +1,106 @@
+@import '../../src/variables';
+$logoSize: 280px;
+$navSize: 50px;
+.navbar__container{
+    position: fixed;
+    width: 100vw;
+    height: $navSize;
+    display: flex;
+    top: 0;
+    left: 0;
+    /* z-index: 1000; */
+    .navbar_shadow{
+        position: fixed;
+        height: $navSize;
+        min-height: 30px;
+        min-width: 100%;
+        background-color: $darkGreen;
+        /* background-image: linear-gradient(to top, transparent, #1D1D1B,#1D1D1B,#1D1D1B); */
+        transition: background-image .3s ease-out;
+        // opacity: 0.3;
+    }
+    .navbar{
+        position: fixed;
+        display: flex;
+        height: $navSize;
+        min-width: 100%;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        z-index: 1000;
+        /*TOGGlE BUTTON*/
+       .drawertogglebutton__container{
+            display: none;
+        }
+        .navbar__logo{
+            order:1;
+            display: flex;
+            // flex-direction: row;
+            align-items: center;
+            // justify-content: center;
+            justify-content: space-evenly;
+            height: 100%;
+            width: $logoSize;
+            margin: 0;
+            padding: 0;
+            .navlogo{
+                max-height: 70%;
+                // max-width: 60px;
+                width: auto;
+                /* filter: invert(100%); */
+            }
+            a{
+                height: auto;
+                color: white;
+                font-weight: 600;
+                text-decoration: none;
+            }
+        }
+        .navbar__options{
+            order: 2;
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            // width: calc(100% - $logoSize); 
+            width: 100%;
+            height: 100%;
+            .left{
+                width: calc( 100% - 240px );
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+            .right{
+                width: 240px;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-end;
+                justify-content: space-evenly;
+                text-align: right;
+            }
+            .navbar__item{
+                // width: 100%;
+                height: 100%;
+                font-size: 90%;
+                line-height: 50px;
+                display: flex;
+                align-items: center;
+                color: white;
+                cursor: pointer;
+                outline: none;
+                transition: color 0.3s ease-out, font-weight 0.2s ease;
+                // text-shadow: black 2px 2px;
+                &:hover{
+                    // color: #A42035;
+                    // font-weight: 1000;
+                }
+            }
+            
+        }    
+    }    
+}    
+
