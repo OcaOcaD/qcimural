@@ -12,8 +12,11 @@
             </button>
         </div> -->
         <div class="navbar__logo">
-            <img src="src/navLogo.png" alt="logo aqui" class="navlogo">
-            <a href=""><legend>QCI Mural</legend></a>
+            <button id="Algorithms" class="toggle-button" onclick="drawerToggleClickHandler()" style="cursor: pointer">
+                <!-- <label for="Algorithms">Run algorithm</label> -->
+                <img src="src/logoCUCEI.png" alt="logo aqui" class="navlogo">
+                <a href=""><legend>QCI Mural</legend></a>
+            </button>
         </div>
         
         <ul class="navbar__options">

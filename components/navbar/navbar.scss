@@ -8,7 +8,7 @@ $navSize: 50px;
     display: flex;
     top: 0;
     left: 0;
-    /* z-index: 1000; */
+    z-index: 1000;
     .navbar_shadow{
         position: fixed;
         height: $navSize;
@@ -43,13 +43,21 @@ $navSize: 50px;
             width: $logoSize;
             margin: 0;
             padding: 0;
-            .navlogo{
-                max-height: 70%;
+            button{
+                @include flexCenter(row);
+                justify-content: space-evenly;
+                background-color: transparent;
+                border: none;
+                height: 50px;
+                width: 240px;
+            }
+            button .navlogo{
+                max-height: 90%;
                 // max-width: 60px;
                 width: auto;
                 /* filter: invert(100%); */
             }
-            a{
+            button a{
                 height: auto;
                 color: white;
                 font-weight: 600;

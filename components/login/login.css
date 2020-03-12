@@ -1,3 +1,27 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  margin-top: 50px;
+  background: url("../../src/cucei_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  z-index: 1;
+}
+
+#wholeShadow {
+  position: absolute;
+  height: 150%;
+  width: 100%;
+  z-index: 2;
+  opacity: 0.8;
+  background-color: #1d1d1b;
+}
+
 /**
  * 01/28/2016
  * This pen is years old, and watching at the code after all
@@ -18,8 +42,8 @@
  * - no frameworks, preprocessors or resets
  */
 /* 'Open Sans' font from Google Fonts */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 .login {
+  background-color: #043e00;
   display: none;
   position: absolute;
   right: 0;
@@ -27,7 +51,7 @@
   width: 360px;
   margin: auto;
   font-size: 16px;
-  z-index: 1000;
+  z-index: 1001;
 }
 
 /* Reset top and bottom margins from certain elements */
@@ -43,16 +67,16 @@
   margin-right: 100px;
   margin-left: auto;
   border: 12px solid transparent;
-  border-bottom-color: #28d;
+  border-bottom-color: #b2ffad;
 }
 
 .login-header {
-  background: #28d;
+  background: #b2ffad;
   padding: 10px;
   font-size: 1.4em;
   font-weight: normal;
   text-align: center;
-  color: #fff;
+  color: #1d1d1b;
 }
 
 .login-container {
@@ -91,7 +115,7 @@
 }
 
 .login input[type="submit"] {
-  background: #28d;
+  background: #b2ffad;
   border-color: transparent;
   color: #fff;
   cursor: pointer;
@@ -104,5 +128,11 @@
 /* Buttons' focus effect */
 .login input[type="submit"]:focus {
   border-color: #05a;
+}
+
+.login p {
+  color: white;
+  text-indent: 2em;
+  font-size: 12px;
 }
 /*# sourceMappingURL=login.css.map */

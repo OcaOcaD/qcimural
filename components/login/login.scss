@@ -1,3 +1,4 @@
+@import '../../src/variables';
 /**
  * 01/28/2016
  * This pen is years old, and watching at the code after all
@@ -23,6 +24,7 @@
 
 
 .login {
+  background-color: $darkGreen;
     display: none;
     position: absolute;
     right: 0;
@@ -30,7 +32,7 @@
     width: 360px;
     margin: auto;
     font-size: 16px;
-    z-index: 1000;
+    z-index: 1001;
 }
 
 /* Reset top and bottom margins from certain elements */
@@ -46,17 +48,17 @@
   margin-right: 100px;
   margin-left: auto;
   border: 12px solid transparent;
-  border-bottom-color: #28d;
+  border-bottom-color: $lightGreen;
 }
 
 .login-header {
-  background: #28d;
+  background: $lightGreen;
   padding: 10px;
   font-size: 1.4em;
   font-weight: normal;
   text-align: center;
 //   text-transform: uppercase;
-  color: #fff;
+  color: $grey;
 }
 
 .login-container {
@@ -94,7 +96,7 @@
 }
 
 .login input[type="submit"] {
-  background: #28d;
+  background: $lightGreen;
   border-color: transparent;
   color: #fff;
   cursor: pointer;
@@ -107,4 +109,9 @@
 /* Buttons' focus effect */
 .login input[type="submit"]:focus {
   border-color: #05a;
+}
+.login p{
+  color: white;
+  text-indent: 2em;
+  font-size: 12px;
 }
